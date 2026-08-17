@@ -1,0 +1,35 @@
+# =====================================
+# Build outputs and intermediate files
+# =====================================
+Build/
+bin/
+obj/
+bin-int/
+
+# ================================
+# Premake & IDE Generated Files 
+# ================================
+# Visual Studio
+*.sln
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+
+# Makefiles (Linux/ MinGW)
+Makefile
+.make
+
+# Xcode / Codelite /CLion
+*.xcodeproj
+*.workspace 
+
+# ======================
+# Visual Studio Cache 
+# ======================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.db
+*.opendb
