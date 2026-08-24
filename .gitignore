@@ -10,7 +10,7 @@ bin-int/
 # Premake & IDE Generated Files 
 # ================================
 # Visual Studio
-*.sln
+*.slnx
 *.vcxproj
 *.vcxproj.user
 *.vcxproj.filters
