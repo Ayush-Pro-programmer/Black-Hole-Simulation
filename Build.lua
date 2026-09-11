@@ -1,4 +1,4 @@
-workspace "Singularity"
+workspace "Nexus"
     architecture "x64"
     configurations { "Debug", "Release" }
     startproject "App"
@@ -8,7 +8,11 @@ workspace "Singularity"
 
     filter "system:windows"
         systemversion "latest"
+        buildoptions {"/utf-8"}
 
--- Include sub-folders scripts
+-- Third-party Projects
+include "Core/vendor/GLFW/GLFW.lua"
+
+-- Engine Projects
 include "core/Core.lua"
 include "App/App.lua"

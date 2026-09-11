@@ -7,18 +7,33 @@ project "Core"
     targetdir (output_bin)
     objdir (output_int)
 
+    pchheader "nxpch.h"
+    pchsource "src/nxpch.cpp"
+
     files {
         "src/**.h",
         "src/**.cpp"
     }
 
     includedirs {
-        "src"
+        "src",
+        "vendor/spdlog/include",
+        "vendor/GLFW/include"
+    }
+
+    links {
+        "GLFW"
     }
 
     defines {
-        "CORE_BUILD_DLL"
+        "NX_PLATFORM_WINDOWS",
+        "NX_BUILD_DLL"
     }
+
+    filter "system:windows"
+        links {
+            "opengl32.lib"
+        }
 
     filter "configurations:Debug"
         defines "CORE_DEBUG"

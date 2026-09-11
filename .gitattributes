@@ -1,0 +1,7 @@
+# Fore LF line endings
+.gitmodules text eol=lf
+*.lua text eol=lf
+*.sh text eol=lf
+
+# Force CRLF for windows
+*.bat text eol=crlf

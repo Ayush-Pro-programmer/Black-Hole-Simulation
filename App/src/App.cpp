@@ -1,8 +1,19 @@
-#include "Core.h"
+#include <Nexus.h>
 
-int main() {
-	CoreApp app;
-	app.Run();
+class Sandbox : public Nexus::Application 
+{
+public:
+	Sandbox() 
+	{
 
-	return 0;
+	}
+
+	~Sandbox() 
+	{
+
+	}
+};
+
+Nexus::Application* Nexus::CreateApplication() {
+	return new Sandbox();
 }

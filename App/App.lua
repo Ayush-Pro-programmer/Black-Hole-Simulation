@@ -13,7 +13,12 @@ project "App"
     }
 
     includedirs {
-        "../Core/src"
+        "../Core/src",
+        "../Core/vendor/spdlog/include"
+    }
+
+    defines {
+        "NX_PLATFORM_WINDOWS"
     }
 
     links {
