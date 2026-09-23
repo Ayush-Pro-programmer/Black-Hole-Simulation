@@ -1,5 +1,6 @@
 #pragma once
 
+#include "nxpch.h"
 #include "Nexus/Core.h"
 
 // Currently Nexus supports immediate event system, i.e

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Nexus/Events/Event.h"
+#include "Event.h"
 
 namespace Nexus {
 
@@ -27,10 +27,10 @@ namespace Nexus {
 		unsigned int m_Height;
 	};
 
-	class WindowCoseEvent : public Event
+	class WindowCloseEvent : public Event
 	{
 	public:
-		WindowCoseEvent() = default;
+		WindowCloseEvent() = default;
 
 		EVENT_CLASS_TYPE(WindowClose)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)

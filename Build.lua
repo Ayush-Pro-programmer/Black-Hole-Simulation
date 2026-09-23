@@ -14,5 +14,5 @@ workspace "Nexus"
 include "Core/vendor/GLFW/GLFW.lua"
 
 -- Engine Projects
-include "core/Core.lua"
+include "Core/Core.lua"
 include "App/App.lua"
