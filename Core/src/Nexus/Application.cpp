@@ -8,7 +8,7 @@ namespace Nexus {
 
 	Application::Application() 
 	{
-		m_Windows = std::make_unique<Window>(WindowProps("[Nexus]", 1280, 720));
+		m_Windows = std::make_unique<Window>(WindowProps("[Nexus Engine]", 1280, 720));
 		m_Windows->SetEventCallback(BIND_EVENT_FN(OnEvent));
 	}
 
